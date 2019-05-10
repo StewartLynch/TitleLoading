@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DRe-yO-XgD">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,110 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TitleLoading" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGD-pk-J0E">
+                                <rect key="frame" x="54" y="152" width="306" height="411"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreaTECH Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cr6-cJ-yx2">
+                                        <rect key="frame" x="10" y="131" width="286" height="232"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Loading Screen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fCB-na-Svp">
+                                        <rect key="frame" x="10" y="33" width="286" height="73"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cr6-cJ-yx2" firstAttribute="top" secondItem="fCB-na-Svp" secondAttribute="bottom" constant="25" id="03R-7g-kuK"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCB-na-Svp" secondAttribute="trailing" constant="10" id="2lH-Lu-1Gw"/>
+                                    <constraint firstItem="fCB-na-Svp" firstAttribute="top" secondItem="WGD-pk-J0E" secondAttribute="top" constant="33" id="FWR-k4-ecX"/>
+                                    <constraint firstItem="cr6-cJ-yx2" firstAttribute="leading" secondItem="WGD-pk-J0E" secondAttribute="leading" constant="10" id="ODB-vu-A3z"/>
+                                    <constraint firstItem="fCB-na-Svp" firstAttribute="centerX" secondItem="WGD-pk-J0E" secondAttribute="centerX" id="Rtu-lJ-eep"/>
+                                    <constraint firstAttribute="width" constant="306" id="TjE-G5-Yan"/>
+                                    <constraint firstItem="cr6-cJ-yx2" firstAttribute="centerX" secondItem="WGD-pk-J0E" secondAttribute="centerX" id="Uc2-aD-gBs"/>
+                                    <constraint firstItem="fCB-na-Svp" firstAttribute="leading" secondItem="WGD-pk-J0E" secondAttribute="leading" constant="10" id="d8J-IB-DDv"/>
+                                    <constraint firstAttribute="trailing" secondItem="cr6-cJ-yx2" secondAttribute="trailing" constant="10" id="qiP-4D-sAj"/>
+                                    <constraint firstAttribute="height" constant="411" id="w1s-Bz-BBG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xuf-gk-X6P">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your Pimary View" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2J-Lb-XPA">
+                                        <rect key="frame" x="52" y="50" width="310.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ypD-hx-n8k">
+                                        <rect key="frame" x="43.5" y="108" width="327" height="160"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="unN-du-YBi"/>
+                                            <constraint firstAttribute="width" constant="327" id="vvQ-mW-qd0"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="w2J-Lb-XPA" firstAttribute="top" secondItem="Xuf-gk-X6P" secondAttribute="top" constant="50" id="XW9-YW-5Rs"/>
+                                    <constraint firstItem="ypD-hx-n8k" firstAttribute="top" secondItem="w2J-Lb-XPA" secondAttribute="bottom" constant="22" id="eDf-r6-30n"/>
+                                    <constraint firstItem="w2J-Lb-XPA" firstAttribute="centerX" secondItem="Xuf-gk-X6P" secondAttribute="centerX" id="mRe-k0-WQ4"/>
+                                    <constraint firstItem="ypD-hx-n8k" firstAttribute="centerX" secondItem="Xuf-gk-X6P" secondAttribute="centerX" id="pwv-Dj-Th3"/>
+                                    <constraint firstAttribute="width" constant="414" id="yJC-4q-2lI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xuf-gk-X6P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Lr-6a-RfK"/>
+                            <constraint firstItem="Xuf-gk-X6P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hsa-iC-ykj"/>
+                            <constraint firstAttribute="bottom" secondItem="Xuf-gk-X6P" secondAttribute="bottom" id="mbO-EV-OIi"/>
+                            <constraint firstItem="Xuf-gk-X6P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tQj-cg-F26"/>
+                            <constraint firstItem="WGD-pk-J0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdx-i9-opy"/>
+                            <constraint firstItem="WGD-pk-J0E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="y30-P7-8mk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iic-SH-1kf"/>
+                    <connections>
+                        <outlet property="primaryView" destination="Xuf-gk-X6P" id="zEU-Gc-OiT"/>
+                        <outlet property="titleLoadingView" destination="WGD-pk-J0E" id="3g8-lC-mce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="20.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8bq-UZ-1Qc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRe-yO-XgD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tI6-hH-8AE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nF7-d5-3gQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9E-d3-F5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="20.758928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CreaTECH Logo" width="523" height="232"/>
+    </resources>
 </document>

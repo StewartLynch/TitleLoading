@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleLoadingView: UIView!
+    @IBOutlet weak var primaryView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        primaryView.alpha = 0
+        UIView.animate(withDuration: 2.0) {
+            self.titleLoadingView.alpha = 0
+            self.primaryView.alpha = 1
+        }
+        
     }
 
 
