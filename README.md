@@ -1,4 +1,6 @@
 # TitleLoading
+![2019-05-10_15-45-30](2019-05-10_15-45-30.gif)
+
 This project is to demonstrate how to display a loading screen and then display the content.
 
 For this example, I did the following:
