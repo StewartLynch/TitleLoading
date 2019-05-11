@@ -34,7 +34,7 @@ For this example, I did the following:
        }
    ```
 
-8. To make it easier to design and make changes to the titleLoadingView, you can temporarily uncheck "installed" on the view so it is not shown on the storyboard and you can edit it.
+8. To make it easier to design and make changes to the titleLoadingView, you can temporarily uncheck "installed" on the **primaryView** so it is not shown on the storyboard and you can edit the **titleLoadingView** that is behind it.
 
 ![image-20190510154335584](image-20190510154335584-7528215.png)
 
