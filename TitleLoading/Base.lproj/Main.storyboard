@@ -86,11 +86,6 @@
                             <constraint firstItem="WGD-pk-J0E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="y30-P7-8mk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Xuf-gk-X6P"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="iic-SH-1kf"/>
                     <connections>
